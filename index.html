@@ -115,7 +115,9 @@
           Business from Previous Meeting: 
         </h2>
 
-        
+        <P>
+          As mentioned before, the office will watching the wildcard series between the Mets and Padres, so please fill out if you are able to come. Click <a href="#availability_form">here</a> to fill out availability form.
+        </P>
 
       </section>
 
@@ -126,6 +128,8 @@
           New Business:
 
         </h2>
+
+        <P> A week from today our clients will be coming in for a meeting, so be prepared to outline your team's approach to the project</P>
         
 
       </section>
@@ -141,7 +145,7 @@
         </h3>
         
         <span > 
-          Just because coffee is provided, does not mean you are entitled to 5 cups of coffee per day. Please be mindful that this is provided as a generous offer.
+          Just because coffee is provided, does not mean you are <b>entitled</b> to <strong>5 cups of coffee per day.</strong> Please be mindful that this is provided as a generous offer.
         </span>
 
       </section>
@@ -158,6 +162,36 @@
           </span>
         </footer>
 
+      </section>
+
+      <section id="availability_form">
+        <h2>
+          Form for Wildcard Game
+        </h2>
+
+        <form>
+          <fieldset>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit">
+          </fieldset>
+          <fieldset>
+            <h3>
+              Leave comment
+            </h3>
+              <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Feel free to write any question or review below"></textarea>
+              <label for="verification">Click yes if human:</label>
+              <input list="verifications" name="verificationValue" id="verification">
+              <datalist id="verifications">
+                <option value="Yes">
+                <option value="No">
+                <option value="Maybe">
+              </datalist>
+              <input type="submit">
+          </fieldset>
+        </form>
       </section>
 
     </body>
