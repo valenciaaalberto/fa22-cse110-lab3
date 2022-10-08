@@ -8,6 +8,6 @@ Passcode 6: ThisIsJS
 Passcode 7: YouFoundMe
 Passcode 8: coolcoolcool
 Passcode 9: 2020sucked
-Passcode 10:
+Passcode 10: listenToTheBlackKeys
 Passcode 11: a11yComesFirst
 Passcode 12: iLoveWebDev
