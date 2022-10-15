@@ -30,6 +30,7 @@ h2 {
 p {
   font-size: 18px;
 }
+
 /*table of contents bullet points*/
 #content ul{
   padding: 5px;
@@ -160,6 +161,7 @@ p {
 
 /*nagivation buttons hover effect*/
 .navbar a:hover {
+  
   background-color: red;
 }
 
