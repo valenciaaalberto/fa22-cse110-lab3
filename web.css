@@ -17,61 +17,69 @@ h1 {
     padding-bottom: 50px; 
     padding-top: 50px; 
     padding-right: 50px; 
-    padding-left: 50px; 
+    padding-left: 70px; 
     margin: auto;
     font-size: 40px;
     margin-bottom: .5em;
+    margin-top: 1em;
 }
 
 h2 {
   font-size: 30px;
+  border-width:2px;
+  border-style: solid;
+  border-color: black;
+  padding-bottom: 10px; 
+  padding-top: 10px; 
+  padding-right: 15px; 
+  padding-left: 15px; 
+  border-radius: 25px;
+  border-width: 1px ;
+  text-align:center;
+  display: inline-block;
+  margin-left:.2em;
 }
 
 p {
   font-size: 18px;
 }
 
-/*table of contents bullet points*/
-#content ul{
-  padding: 5px;
-  list-style-type: none;
-  text-align: center;
-  margin: 10px;
-  border-radius: 10px;
+form {
+  font-size: 18px;
 }
-
-#content ul li{
-  display: inline;
-}
-
 /*control of date*/
 #excdate{
   margin-left: 2em;
-  margin-bottom: 1em;
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 
 /*Control's meeting objective*/
 #purpose{
   margin-left: 2em;
-  margin-bottom: 1em;
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 
 /*Those in attendance*/
 #attlist{
   margin-left: 2em;
-  margin-bottom: 1em;
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 
 /*Those absent*/
 #abslist{
   margin-left: 2em;
-  margin-bottom: 1em;
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 
 /*Controls agenda bullet points*/
 #tdo{
   margin-left: 2em;
-  margin-bottom: 1em;
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 
 /*Controls image of talking points*/
@@ -80,23 +88,25 @@ p {
   margin-left: auto;
   margin-right: auto;
   margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 /*Wildcard inivitation*/
 #wild{
+  margin-top: 1em;
   margin-left: 2em;
 }
 
 /*Wildcard summary inivitation*/
 #wildsum{
   margin-left: 3em;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 /*Information about gathering tab*/
 #client{
   margin-left: 2em;
+  margin-top: 1em;
   margin-bottom: 1em;
 }
 
@@ -119,34 +129,48 @@ p {
 /*Controls beach sounds*/
 #sound{
   margin-left: 3em;
-  margin-bottom: 1em;
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 
 /*Resource label*/
 #res{
+  margin-top: 1em;
   margin-left: 1em;
 }
 
 /*Move meeting points bottom*/
 #other_points{
-  margin-bottom: 1em;
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 
 /*coffee comment*/
 #coffee{
   margin-left: 3em;
+  margin-bottom: 1em;
 }
 
 /*sets the form*/
 #availability_form{
-  margin-bottom: auto;
+  margin-bottom: 1em;
+  margin-right:40em;
 }
+
+/*posiiton of forms*/
+#firstbox{
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left:1em;
+}
+
 
 /*nagivation buttons*/
 .navbar{
   overflow: hidden;
   background-color: #333;
   font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 1.5em;
 }
 
 /*nagivation buttons a*/
@@ -161,9 +185,17 @@ p {
 
 /*nagivation buttons hover effect*/
 .navbar a:hover {
-  
   background-color: red;
+  margin-bottom: 1em;
 }
+
+#perinfo{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+
 
 
 
