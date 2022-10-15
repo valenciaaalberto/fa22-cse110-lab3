@@ -1,3 +1,128 @@
+/* normalize document */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
 body {
     background-color: #F5F5DC;
   }
+
+/* center title and change to color*/
+h1{
+  text-align: center;
+  color : #2F4F4F;
+}
+
+/*table of contents bullet points*/
+#content{
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+
+/*control of button*/
+#greet{
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+
+/*control of date*/
+#excdate{
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+
+/*Control's meeting objective*/
+#purpose{
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+
+/*Those in attendance*/
+#attlist{
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+
+/*Those absent*/
+#abslist{
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+
+/*Controls agenda bullet points*/
+#tdo{
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+
+/*Controls image of talking points*/
+#business{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/*Wildcard inivitation*/
+#wild{
+  margin-left: 2em;
+}
+
+/*Wildcard summary inivitation*/
+#wildsum{
+  margin-left: 3em;
+  margin-bottom: 1em;
+}
+
+/*Information about gathering tab*/
+#client{
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+
+/*Controls beach video*/
+#beach{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+}
+
+/*Saying that job will allow you to relax*/
+#relax{
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+
+/*Controls beach sounds*/
+#sound{
+  margin-left: 3em;
+  margin-bottom: 1em;
+}
+
+/*Resource label*/
+#res{
+  margin-left: 1em;
+}
+
+/*Move meeting points bottom*/
+#other_points{
+  margin-bottom: 1em;
+}
+
+/*coffee comment*/
+#coffee{
+  margin-left: 3em;
+}
+
+#availability_form{
+  margin-bottom: 1em;
+}
+
+
+
+
+
+

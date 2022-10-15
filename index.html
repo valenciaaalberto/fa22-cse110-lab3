@@ -8,9 +8,6 @@
     <title> 
       Meeting Notes 
     </title>
-    <style>
-      h1 {text-align: center;}
-    </style>
   </head>
   <body>
     <header>
@@ -24,7 +21,7 @@
       <h2>
         Table of Contents:
       </h2>
-      <nav>
+      <nav id = "content">
         <ul>
           <li><a href="#date">Date of Meeting</a></li>
           <li><a href="#objective">Objective</a></li>
@@ -44,7 +41,7 @@
         <h2> 
           Greetings:   
         </h2>
-        <button type="button">Click Me!</button>
+        <button type="button" id ="greet">Click Me!</button>
       </section>
 
       <section id="date">
@@ -52,7 +49,7 @@
           Date: 
         </h2>
 
-        <p> 
+        <p id ="excdate"> 
           February 22, 2022 
         </p>
 
@@ -63,7 +60,7 @@
           Objective:
         </h2>
 
-        <p> 
+        <p id = "purpose"> 
           This meeting was conducted to introduce the new project incoming interns for summer 2022 will work on. 
         </p>
 
@@ -75,7 +72,7 @@
           Attendance: 
         </h2>
         
-        <ul>
+        <ul id = "attlist">
           <li> Joe </li>
           <li> Amy </li>
           <li> Roman </li>
@@ -93,7 +90,7 @@
             Absences:
           </h2>
 
-        <ul>
+        <ul id="abslist">
           <li> Trey </li>
           <li> Melvyn </li>
           <li> Dou </li>
@@ -110,13 +107,13 @@
         </h2>
 
   
-        <ol>
+        <ol id="tdo">
           <li> Explain that we have been contracted by the <em>US government</em> to create a Machine Learning algorithm that traces the mutation of Covid 19. </li>
           <li> Illustration of allotted budget/resources. Look below step 4 </li>
           <li> Selecting team leads </li>
           <li> Forming groups </li>
         </ol>
-        <img src="https://www.nia.nih.gov/sites/default/files/d7/fy2015_graph_1.png" alt="Budget" width = 500>
+        <img src="https://www.nia.nih.gov/sites/default/files/d7/fy2015_graph_1.png" alt="Budget" id="business" width = 500>
        
 
       </section>
@@ -127,10 +124,10 @@
           Business from Previous Meeting: 
         </h2>
 
-        <p>
+        <p id="wild">
           As mentioned before, the office will watching the wildcard series between the Mets and Padres, so please fill out if you are able to come. Click <a href="#availability_form">here</a> to fill out availability form.
         </p>
-        <details>
+        <details id = "wildsum">
           <summary>Information about the gathering</summary>
           <p>If you are interested about the event, the Padres will face the Mets, who for a long part of the season seemed to be the clear division winners. We will have food and snacks provided. </p>
         </details>
@@ -143,12 +140,14 @@
           New Business:
         </h2>
 
-        <p> A week from today our clients will be coming in for a meeting, so be prepared to outline your team's approach to the project. Remember to do good so we can have vacations at places like in the video</p>
-        <video controls> 
+        <p id="client"> A week from today our clients will be coming in for a meeting, so be prepared to outline your team's approach to the project. Remember to do good so we can have vacations at places like in the video</p>
+        <video controls id="beach"> 
           <source src="beach.mp4" type="video/mp4"> 
         </video> 
-        <p>Here are the relaxing sounds you will be listening to by the end of the internship</p>
-        <audio controls>
+
+        <p id="relax">Here are the relaxing sounds you will be listening to by the end of the internship</p>
+
+        <audio controls id="sound">
           <source src="music.mp3" type="audio/mp3">
         </audio>
 
@@ -160,11 +159,11 @@
           Other Meeting Points: 
         </h2>
           
-        <h3>
+        <h3 id="res">
           Use of Resources
         </h3>
         
-        <span > 
+        <span id="coffee"> 
           Just because coffee is provided, does not mean you are <b>entitled</b> to <strong>5 cups of coffee per day.</strong> Please be mindful that this is provided as a generous offer.
         </span>
 
