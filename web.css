@@ -53,15 +53,10 @@ form {
 }
 
 /*control of date*/
-#excdate{
-  
-  margin-left: 1em;
-  margin-top: 1em;
-  margin-bottom: 2em;
-}
-
 /*Control's meeting objective*/
-#purpose{
+/*Combining Two Selectors*/
+#excdate #purpose{
+  
   margin-left: 1em;
   margin-top: 1em;
   margin-bottom: 2em;
@@ -235,11 +230,13 @@ form {
   flex-grow: 2; 
   flex-shrink: 2;
 }
+
 .point-two{
   flex:1;
   flex-grow: 3; 
   flex-shrink: 3;
 }
+
 .point-three{
   flex:1;
   flex-grow: 2; 
@@ -345,6 +342,35 @@ form {
   grid-column-end: 3;
   grid-row-start: 10;
   grid-row-end: 11;
+}
+
+/*Attribute Selector*/
+a[href^="a"] {
+  background-color: gold;
+}
+
+/*Selector List*/
+ul li {
+  list-style-type: circle;
+}
+
+#wildsum{
+  color:gray;
+}
+
+/*Child Combinator*/
+div > span {
+  background-color: yellow;
+}
+
+/*General sibling combinator*/
+div ~ p{
+  color: blue;
+}
+
+/*Adjacent sibling combinaton*/
+li:first-of-type + li {
+  color: red;
 }
 
 /*detects size of media*/
