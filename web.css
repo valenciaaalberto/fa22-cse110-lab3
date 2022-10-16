@@ -37,7 +37,11 @@ h2 {
   border-width: 1px ;
   text-align:center;
   display: inline-block;
-  margin-left:.2em;
+  /*margin-left:.2em;*/
+}
+
+h3{
+  font-size: 25px;
 }
 
 p {
@@ -47,37 +51,42 @@ p {
 form {
   font-size: 18px;
 }
+
 /*control of date*/
 #excdate{
-  margin-left: 2em;
+  
+  margin-left: 1em;
   margin-top: 1em;
   margin-bottom: 2em;
 }
 
 /*Control's meeting objective*/
 #purpose{
-  margin-left: 2em;
+  margin-left: 1em;
   margin-top: 1em;
   margin-bottom: 2em;
 }
 
 /*Those in attendance*/
 #attlist{
-  margin-left: 2em;
+  position: relative;
+  margin-left: 1em;
   margin-top: 1em;
   margin-bottom: 2em;
 }
 
 /*Those absent*/
 #abslist{
-  margin-left: 2em;
+  position: relative;
+  margin-left: 1em;
   margin-top: 1em;
   margin-bottom: 2em;
 }
 
 /*Controls agenda bullet points*/
 #tdo{
-  margin-left: 2em;
+  position: relative;
+  margin-left:1em;
   margin-top: 1em;
   margin-bottom: 2em;
 }
@@ -89,23 +98,24 @@ form {
   margin-right: auto;
   margin-top: 1em;
   margin-bottom: 2em;
+  position: static;
 }
 
 /*Wildcard inivitation*/
 #wild{
   margin-top: 1em;
-  margin-left: 2em;
+  margin-left: 1em;
 }
 
 /*Wildcard summary inivitation*/
 #wildsum{
-  margin-left: 3em;
+  margin-left: 1pc;
   margin-bottom: 2em;
 }
 
 /*Information about gathering tab*/
 #client{
-  margin-left: 2em;
+  margin-left: 10pt;
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -122,13 +132,13 @@ form {
 
 /*Saying that job will allow you to relax*/
 #relax{
-  margin-left: 2em;
+  /*margin-left: 2em;*/
   margin-bottom: 1em;
 }
 
 /*Controls beach sounds*/
 #sound{
-  margin-left: 3em;
+  margin-left: 3lh;
   margin-top: 1em;
   margin-bottom: 2em;
 }
@@ -136,49 +146,42 @@ form {
 /*Resource label*/
 #res{
   margin-top: 1em;
-  margin-left: 1em;
-}
-
-/*Move meeting points bottom*/
-#other_points{
-  margin-top: 1em;
-  margin-bottom: 2em;
+  /*margin-left: 1em;*/
 }
 
 /*coffee comment*/
 #coffee{
-  margin-left: 3em;
+ /*margin-left: 3em;*/
   margin-bottom: 1em;
 }
 
 /*sets the form*/
 #availability_form{
   margin-bottom: 1em;
-  margin-right:40em;
+  /*margin-right:40em;*/
 }
 
 /*posiiton of forms*/
 #firstbox{
-  margin-top: 2em;
-  margin-bottom: 2em;
-  margin-left:2em;
+  margin-top: 2ex;
+  margin-bottom: 2ex;
+  /*margin-left:2em;*/
   max-width: fit-content;
   max-height: fit-content;
 
 }
 
-
-/*nagivation buttons*/
 .navbar{
-  overflow: hidden;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   background-color: #333;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 1.5em;
+  font-family: Arial, Helvetica, sans-serif
 }
 
 /*nagivation buttons a*/
+
 .navbar a {
-  float: left;
   font-size: 16px;
   color: white;
   text-align: center;
@@ -187,6 +190,7 @@ form {
 }
 
 /*nagivation buttons hover effect*/
+
 .navbar a:hover {
   background-color: red;
   margin-bottom: 1em;
@@ -195,8 +199,223 @@ form {
 #perinfo{
   margin-top: 1em;
   margin-bottom: 1em;
-  margin-left: 1em;
+  /*margin-left: 1em;*/
 }
+
+/*when click on contact info, it turns red*/
+.contactlink:active{
+  color:red;
+}
+
+/*stock on future*/
+#stocktitle{
+  margin-bottom: 1em;
+}
+
+/*stock description*/
+#stockdes{
+  /*margin-left: 1em;*/
+  margin-bottom: 1em;
+}
+
+.stock-container{
+  display:flex;
+}
+
+.stock-container div{
+  border:1.5px black solid;
+  padding:10px;
+  margin:auto;
+  justify-content: space-evenly;
+  flex:center;
+}
+
+.point-one{
+  flex:1;
+  flex-grow: 2; 
+  flex-shrink: 2;
+}
+.point-two{
+  flex:1;
+  flex-grow: 3; 
+  flex-shrink: 3;
+}
+.point-three{
+  flex:1;
+  flex-grow: 2; 
+  flex-shrink: 2;
+}
+
+#stocksec{
+  margin-bottom: 1em;
+}
+
+
+#mainelements{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: 11;
+  gap: 1em;
+  justify-content: center;
+}
+
+/*First row: navigation bar*/
+#navigation{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+/*Second row: date*/
+#date{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+/*Third row: objective*/
+#objective{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+/*Fourth row: Attendance & Absences*/
+#attendance{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+/*Fourth row: Attendance & Absences*/
+#absences{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+/*Fifth row: Agenda*/
+#agenda{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+/*Sixth row: Prev business*/
+#prev_business{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+/*Seventh Row: curr_business*/
+#curr_business{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
+
+/*Eigth row: Other_points*/
+#other_points{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
+
+/*Nineth row: Stocksec*/
+#stocksec{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 9;
+  grid-row-end: 10;
+}
+
+/*Tenth row: Availablitly*/
+#availability_form{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 10;
+  grid-row-end: 11;
+}
+
+/*detects size of media*/
+@media screen and (max-width: 460px) {
+  #mainelements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navbar{
+    flex-direction: column;
+  }
+  .stock-container{
+    flex-direction: column;
+  }
+  #beach{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    max-height:250px;
+    max-width: 350px;
+  }
+  h1 {
+    background-color: lightgrey; 
+    height: 20px;
+    width: 700px; 
+    border: 15px solid #A9A9A9; 
+    padding-bottom: 50px; 
+    padding-top: 50px; 
+    padding-right: 50px; 
+    padding-left: 70px; 
+    margin: auto;
+    font-size: 32px;
+    margin-bottom: .5em;
+    margin-top: 1em;
+  }
+
+  h2 {
+    font-size: 25px;
+    border-width:2px;
+    border-style: solid;
+    border-color: black;
+    padding-bottom: 10px; 
+    padding-top: 10px; 
+    padding-right: 15px; 
+    padding-left: 15px; 
+    border-radius: 25px;
+    border-width: 1px ;
+    text-align:center;
+    display: inline-block;
+    /*margin-left:.2em;*/
+  }
+
+  h3{
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  form {
+    font-size: 14px;
+  }
+  #business{
+    width:200px;
+    height: 150px;
+  }
+}
+
 
 
 
